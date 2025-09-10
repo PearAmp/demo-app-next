@@ -1,9 +1,16 @@
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import Image from 'next/image'
+
 export default function Navbar() {
   return (
     <nav>
       <div className={styles.fl}>
+        <Image   
+        src="/images/icons/logo.png"
+        alt="Logo" 
+        width={120}   // set your image width
+        height={60}  />
         <div className="title-left">MULTI</div>
         <div className="title-right">SHOP</div>
       </div>
