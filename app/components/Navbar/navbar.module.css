@@ -1,5 +1,8 @@
 .title {
-color: red;
+color: #000;
+}
+.title span {
+    font-weight: 600;
 }
 .flex {
     background-color: red;

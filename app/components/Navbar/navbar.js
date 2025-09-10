@@ -5,6 +5,10 @@ import Image from 'next/image'
 export default function Navbar() {
   return (
     <nav>
+      <div className={styles.title}>
+        <h2>“กระเบื้องที่ไหนก็มี แต่กระเบื้องคุณภาพดี” ต้องที่ <span>ไอดีว่าลิฟวิ่ง</span></h2>
+        <div className={styles.icons}></div>
+      </div>
       <div className={styles.fl}>
         <Image   
         src="/images/icons/logo.png"
