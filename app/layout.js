@@ -1,6 +1,17 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/navbar";
+import Image from "next/image";
+
+import './globals.css'
+import { Noto_Sans_Thai } from 'next/font/google'
+
+const notoSansThai = Noto_Sans_Thai({
+  variable: "--font-geist-noto",
+
+  subsets: ['thai'],   // important: use 'thai'
+  weight: ['400', '700'], // pick weights you need
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +30,29 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-  <html>
+  <html lang="th" className={notoSansThai.className}>
     <body className="container">
-    <div>
+    <div className="layout">
+      <div className="head">
+        <h2 className={notoSansThai.className}>
+          สมัครสมาชิกรับส่วนลดทันที 30% <span>เมื่อซื้อครั้งแรก</span> *
+        </h2>
+      </div>
+      <div className="title">
+        <h2 className={notoSansThai.className}>
+          “กระเบื้องที่ไหนก็มี แต่กระเบื้องคุณภาพดี” ต้องที่{" "}
+          <span>ไอดีว่าลิฟวิ่ง</span>
+        </h2>
+        <div className="icons">
+          <Image
+            src="/images/icons/phone.png"
+            alt="Logo"
+            width={17} // set your image width
+            height={17}
+          />
+          <h2 className={notoSansThai.className}>06-4516-3666</h2>
+        </div>
+      </div>
     <Navbar />
     {children}
   </div>
