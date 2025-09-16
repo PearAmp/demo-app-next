@@ -1,11 +1,52 @@
+.navlarge {
+    padding: 1rem 0;
+}
 
+.navlarge .flex {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-.flex {
-    background-color: red;
+}
 
+.navlarge .item ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlarge .item ul li {
+    font-size: 1.063rem;
+    padding: 0 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.navlarge .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navmedia {
+    display: none;
+}
+
+.navmedia h1 {
+    color: red;
 }
 
 .title-left {
     background-color: red;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .navlarge {
+        display: none;
+    }
+
+    .navmedia {
+        display: block;
+    }
 }
