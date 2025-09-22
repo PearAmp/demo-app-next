@@ -133,9 +133,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <nav className={styles.navmedia}>
-        <h1>dskfdlko</h1>
-      </nav>
+      
     </div>
   );
 }

@@ -99,3 +99,15 @@ body {
 
 
 }
+
+@media only screen and (max-width: 600px) {
+  .layout .title {
+    display: none;
+  }
+
+  .layout .head {
+    display: none;
+
+  }
+
+}
