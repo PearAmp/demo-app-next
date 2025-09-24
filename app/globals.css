@@ -100,6 +100,17 @@ body {
 
 }
 
+.drawer {
+  display: none;
+}
+
+.homepage {
+  background-color: #F4F4F4;
+}
+.homepage .item-custom {
+  padding: 1rem 10rem;
+  background-color: red;
+}
 @media only screen and (max-width: 600px) {
   .layout .title {
     display: none;
@@ -110,4 +121,11 @@ body {
 
   }
 
+  .navbar {
+    display: none;
+  }
+
+  .drawer {
+    display: block;
+  }
 }
